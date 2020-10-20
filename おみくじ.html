@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おみくじ</title>
+</head>
+<body>
+    <h1>おみくじ</h1>
+    <button id="btn">おみくじスタート</button>
+
+    <div id="disp"></div>
+
+    <script>
+        var omikuji_items = ["大吉", "中吉", "小吉", "凶"];
+        var btn = document.getElementById('btn');
+        var disp = document.getElementById('disp');
+        var num = 0;
+
+        btn.addEventListener('click', function(){
+            var num = Math.floor(Math.random() * omikuji_items.length);
+            var result = omikuji_items[num];
+            disp.innerHTML = result;
+
+            if(result == "大吉"){
+                alert("おめでとう！");
+            }else if(result == "凶"){
+                alert("気にするな！");
+            }else{
+                alert("まぁまぁか");
+            }
+
+        });
+    </script>
+</body>
+</html>
