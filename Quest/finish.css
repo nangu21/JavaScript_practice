@@ -1,0 +1,117 @@
+#message {
+    position: absolute;
+    z-index: 1;
+    left: 120px;
+    top: 125px;
+    font-size: 22px;
+    color: #118b7c;
+    text-shadow: 1px 2px 4px #f4db21;
+    font-size: x-large;
+}
+
+.canvas {
+    z-index: -1;
+    position: absolute;
+}
+
+body{
+    background-color:  #fff18b;
+}
+
+p {
+    position: absolute;
+    z-index: 1;
+    left: 28%;
+    top: 222px;
+    font-size: 15px;
+    font-weight: lighter;
+    color: #118b7c;
+    text-shadow: 1px 2px 4px #f4db21;
+}
+
+.ticket{
+    position: absolute;
+    top: 42%;
+    z-index: 5;
+    background-size:cover;
+    padding:0.3rem;
+    box-shadow:1px 1px 6px rgba(10,5,0,0.5);
+    color:#433;
+    max-width:480px;
+    border:1px solid rgba(30,5,0,0.12);
+}
+.ticket-inner{
+    z-index: 2;
+    position: relative;
+    padding:0 0.7rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border:2px solid rgba(30,5,0,0.5);
+    border-radius:2px;
+    text-align:center;
+}
+.ticket-left{
+    z-index: 2;
+    position: relative;
+    width:65%;
+    border-right:1px dashed #976;
+    padding:0.7rem 1rem 0.7rem 0;
+    font-size:80%;
+}
+.ticket-code{
+    z-index: 2;
+    position: relative;
+    font-weight:bold;
+    font-size: 1.3rem;
+    line-height:1.2;
+    margin: 10px 0;
+}
+.ticket-name{
+    z-index: 2;
+    position: relative;
+    border-top:1px solid #666;
+    padding:0.4em 0 0 0;
+    line-height:1.2;
+    font-size:1rem;
+}
+.ticket-right{
+    z-index: 2;
+    position: relative;
+    width:30%;
+    padding:0.7rem;
+    line-height:1.2;
+}
+.ticket-price{
+    z-index: 2;
+    position: relative;
+    font-weight:bold;
+    font-size:100%;
+    margin-top: 15px;
+}
+.ticket-ppp{
+    z-index: 2;
+    position: relative;
+    border-bottom:1px solid #666;
+    padding-bottom:6px;
+    margin-bottom:6px;
+}
+
+.ticket {
+    animation: zoomIn 2s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+}
+
+p {
+    animation: zoomIn 2s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
